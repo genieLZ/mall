@@ -32,6 +32,7 @@ public class DemoController {
     @RequestMapping(value = "/brand/listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsBrand>> getBrandList() {
+        LOGGER.info("master");
         return CommonResult.success(demoService.listAllBrand());
     }
 
