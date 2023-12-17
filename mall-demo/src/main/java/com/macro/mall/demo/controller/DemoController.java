@@ -9,11 +9,11 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -23,7 +23,7 @@ import java.util.List;
 @Api(tags = "DemoController", description = "品牌管理示例接口")
 @Controller
 public class DemoController {
-    @Autowired
+    @Resource
     private DemoService demoService;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DemoController.class);
