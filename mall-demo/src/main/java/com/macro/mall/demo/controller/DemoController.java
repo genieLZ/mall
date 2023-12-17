@@ -20,7 +20,7 @@ import java.util.List;
  * 品牌管理示例controller
  * Created by macro on 2019/4/8.
  */
-@Api(tags = "DemoController", description = "品牌管理示例接口master")
+@Api(tags = "DemoController", description = "品牌管理示例接口master3")
 @Controller
 public class DemoController {
     @Resource
@@ -32,7 +32,7 @@ public class DemoController {
     @RequestMapping(value = "/brand/listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsBrand>> getBrandList() {
-        LOGGER.info("master2");
+        LOGGER.info("master3");
         return CommonResult.success(demoService.listAllBrand());
     }
 
